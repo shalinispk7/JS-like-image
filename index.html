@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript-DOM-like-image</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <style>
+       i{
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="image/enjoy.jpg" id="enjoy-img" alt="enjoy" />
+    <p> <i class="bi bi-chat-heart" id="heart"></i> 
+     <span id="likeCount"></span> 
+     <span>Like</span>
+    </p>
+   
+    
+
+    <script>
+     let img= document.getElementById("enjoy-img")
+    let heartIcon=document.getElementById("heart")
+    let likeCount= document.getElementById("likeCount")
+
+    // let count=0;
+    // img.addEventListener("click",function(){
+    //     count++;
+    //      likeCount.innerText = count
+    //     console.log(count);
+    // })
+    
+    let count=0;
+     heartIcon.addEventListener("click",function(){
+       count++;
+       likeCount.innerText = count
+        console.log(count)
+     });
+
+
+     
+    </script>
+  </body>
+</html>
